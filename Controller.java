@@ -20,7 +20,7 @@ class Controller implements ActionListener{
 	} else if (command.equals("openDocument")) {
 
 		A ob = new A();
-		String text = ob.erkin();
+		String text = ob.atay();
 		viewer.update(text);
 
 		String fileName = ob.getFileName();
