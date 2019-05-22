@@ -10,4 +10,21 @@ class Controller implements ActionListener{
     }
 
     public void actionPerformed(ActionEvent event) {
+
 	String command = event.getActionCommand();	
+
+	if (command.equals("createNewDocument")) {
+	    System.out.println("createNewDocument");
+	    viewer.update("createNewDocument");
+
+	} else if (command.equals("openDocument")) {
+
+		A ob = new A();
+		String text = ob.erkin();
+		viewer.update(text);
+
+		String fileName = ob.getFileName();
+
+		viewer.setTitle(fileName);
+
+	} else if (command.equals("saveDocument")) {
