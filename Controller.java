@@ -70,3 +70,40 @@ class Controller implements ActionListener{
 	    viewer.update("goToText");
 	} else
 
+	if (command.equals("selectAllText")) {
+	    viewer.getTextArea().selectAll();
+ 
+	} else
+
+	if (command.equals("timeDate")) {
+	    System.out.println("timeDate");
+	    viewer.update("timeDate");
+	} else
+
+	if (command.equals("wordWrap")) {
+	    System.out.println("wordWrap");
+	    viewer.update("wordWrap");
+	} else
+
+	if (command.equals("fontText")) {
+	    System.out.println("fontText");
+	    viewer.update("fontText");
+	} else
+
+	if (command.equals("statusBarMenu")) {
+	    System.out.println("statusBarMenu");
+	    viewer.update("statusBarMenu");
+	} else
+
+	if (command.equals("viewHelpMenu")) {
+	    System.out.println("viewHelpMenu");
+	    viewer.update("viewHelpMenu");
+	} else
+
+	if (command.equals("aboutNotepadMenu")) {
+	    System.out.println("aboutNotepadMenu");
+	    viewer.update("aboutNotepadMenu");
+	} 
+
+    }
+}                              
