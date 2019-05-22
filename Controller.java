@@ -10,3 +10,4 @@ class Controller implements ActionListener{
     }
 
     public void actionPerformed(ActionEvent event) {
+	String command = event.getActionCommand();	
