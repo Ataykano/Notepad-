@@ -28,3 +28,45 @@ class Controller implements ActionListener{
 		viewer.setTitle(fileName);
 
 	} else if (command.equals("saveDocument")) {
+
+		B ob1 = new B();
+		String text = viewer.getTextArea().getText();
+		ob1.saveToFile(text);
+
+
+
+
+	} else if (command.equals("printDocument")) {
+	    System.out.println("printDocument");
+	    viewer.update("printDocument");
+	} else if (command.equals("exitItem")) {
+	    System.out.println("exitItem");
+	    viewer.update("exitItem");
+	} else if (command.equals("cutText")) {
+	    viewer.getTextArea().cut();
+	} else if (command.equals("copyText")) {
+	    viewer.getTextArea().copy();
+	} else
+	if (command.equals("pasteText")) {
+	    viewer.getTextArea().paste();	
+	} else
+	if (command.equals("deleteText")) {
+	    int start = viewer.getTextArea().getSelectionStart();
+	    int end = viewer.getTextArea().getSelectionEnd();
+	    viewer.getTextArea().replaceRange("", start, end);
+	} else
+	if (command.equals("findText")) {
+	    System.out.println("findText");
+	    viewer.update("findText");
+	} else
+
+	if (command.equals("findNextText")) {
+	    System.out.println("findNextText");
+	    viewer.update("findNextText");
+	} else
+
+	if (command.equals("goToText")) {
+	    System.out.println("goToText");
+	    viewer.update("goToText");
+	} else
+
