@@ -17,3 +17,13 @@ class A {
 
         return fileName;
     }
+
+    public String atay() {
+	JFileChooser fc = new JFileChooser();
+	int returnVal = fc.showOpenDialog(new JFrame());
+
+	File file = null;
+	if(returnVal == 0) {
+		file = fc.getSelectedFile();
+		fileName = file.getName();
+
