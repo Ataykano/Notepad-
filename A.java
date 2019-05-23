@@ -14,3 +14,6 @@ class A {
 	fileName = "";
     }
     public String getFileName() {
+
+        return fileName;
+    }
