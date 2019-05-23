@@ -27,3 +27,13 @@ class A {
 		file = fc.getSelectedFile();
 		fileName = file.getName();
 
+	}
+
+	String temp = "";
+	try {
+		FileReader fileReader = new FileReader(file);
+		BufferedReader inputStream = new BufferedReader(fileReader);
+
+		String line;
+		while ((line = inputStream.readLine()) != null) {
+			temp = temp + line + "\n";
